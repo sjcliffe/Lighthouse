@@ -265,7 +265,7 @@ gulp.task('pages_static', function() {
     .pipe(gulp.dest('build'));
 });
 
-gulp.task('pages', ['pages_html', 'pages_scripts', /*'pages_styles',*/ 'pages_static']);
+gulp.task('pages', ['pages_html', 'pages_scripts', 'pages_styles', 'pages_static']);
 
 //build ditributable and sourcemaps after other tasks completed
 gulp.task('zip', ['contentscripts', 'injectscripts', 'background', 'copy', 'pages'], function() {
